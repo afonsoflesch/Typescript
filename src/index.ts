@@ -135,3 +135,12 @@ function apresentarErro(erro:string): void
     console.log(erro)
 }
 console.log(celular)
+
+// "------------------------------------------------------------"
+
+enum CategoriaComida {
+    V = "Vermelho",
+    Ve = "Verde",
+    Az = "Azul",
+    Am = "Amarelo"
+}

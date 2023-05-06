@@ -87,3 +87,11 @@ function apresentarErro(erro) {
     console.log(erro);
 }
 console.log(celular);
+// "------------------------------------------------------------"
+var CategoriaComida;
+(function (CategoriaComida) {
+    CategoriaComida["V"] = "Vermelho";
+    CategoriaComida["Ve"] = "Verde";
+    CategoriaComida["Az"] = "Azul";
+    CategoriaComida["Am"] = "Amarelo";
+})(CategoriaComida || (CategoriaComida = {}));
