@@ -48,3 +48,42 @@ carro = {
     ano: 2010
 };
 console.log(carro);
+// "------------------------------------------------------------"
+let qualquer = [1, 2, 3];
+console.log(qualquer);
+qualquer = "Agora virou uma string";
+console.log(qualquer);
+qualquer = false;
+console.log(qualquer);
+let duascoisas = "texto qualquer";
+duascoisas = false;
+console.log(duascoisas);
+const jogo1 = {
+    nome: "Call of Duty",
+    anoLancamento: 2010,
+};
+let ticatica = ["texto", 1];
+ticatica.push("novo texto");
+ticatica.push(19);
+console.log(ticatica);
+// "------------------------------------------------------------"
+// enum
+var Cores;
+(function (Cores) {
+    Cores["V"] = "Vermelho";
+    Cores["Ve"] = "Verde";
+    Cores["Az"] = "Azul";
+    Cores["Am"] = "Amarelo";
+})(Cores || (Cores = {}));
+const celular = {
+    marca: "Nokia",
+    cor: Cores.Am
+};
+function somar(numero1, numero2) {
+    return numero1 + numero2;
+}
+console.log(somar(10, 20));
+function apresentarErro(erro) {
+    console.log(erro);
+}
+console.log(celular);

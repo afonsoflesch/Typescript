@@ -10,7 +10,6 @@ let pessoa: [string, number]
 pessoa = ["Regis", 12]
 
 // Object Literal
-
 let animal: {nome: string, cor: string, idade: number};
 
 animal = {
@@ -76,3 +75,63 @@ carro = {
 }
 
 console.log(carro)
+
+
+// "------------------------------------------------------------"
+
+let qualquer: any = [1, 2, 3]
+console.log(qualquer)
+
+qualquer = "Agora virou uma string"
+console.log(qualquer)
+
+qualquer = false
+console.log(qualquer)
+
+let duascoisas: string | boolean = "texto qualquer";
+duascoisas = false
+console.log(duascoisas)
+
+
+type jogo = {nome: string, anoLancamento: number}
+
+const jogo1: jogo = {
+    nome: "Call of Duty",
+    anoLancamento: 2010,
+    
+}
+
+let ticatica: (string | number) [] = ["texto", 1]
+ticatica.push("novo texto")
+ticatica.push(19)
+
+
+console.log(ticatica)
+
+// "------------------------------------------------------------"
+
+// enum
+enum Cores {
+    V = "Vermelho",
+    Ve = "Verde",
+    Az = "Azul",
+    Am = "Amarelo"
+}
+
+const celular: {marca:string, cor: Cores} = {
+    marca: "Nokia",
+    cor: Cores.Am
+}
+
+function somar(numero1: number, numero2: number): number
+{
+    return numero1 + numero2
+}
+
+console.log(somar(10,20))
+
+function apresentarErro(erro:string): void
+{
+    console.log(erro)
+}
+console.log(celular)
