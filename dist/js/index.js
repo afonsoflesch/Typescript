@@ -1,4 +1,3 @@
-"use strict";
 // console.log("oi")
 // console.log()
 // // Object
@@ -249,8 +248,7 @@ class Cachorro extends Animal {
     }
 }
 // --------------------------------------------------------
-class ContaBancaria {
-}
+// class ContaBancaria
 //      class Animal {
 //     nome: string
 //     constructor(nome: string) {
@@ -268,3 +266,6 @@ class ContaBancaria {
 // const dog = new Cachorro ("Rex");
 // dog.latir();
 // dog.mover(5);
+import { soma, subtrai } from './matematica.js';
+console.log(soma(5, 3));
+console.log(subtrai(5, 3));

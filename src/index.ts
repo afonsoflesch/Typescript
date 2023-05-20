@@ -348,7 +348,7 @@ class Cachorro extends Animal {
 // --------------------------------------------------------
 
 
-class ContaBancaria
+// class ContaBancaria
     
 
 
@@ -373,3 +373,9 @@ class ContaBancaria
     // const dog = new Cachorro ("Rex");
     // dog.latir();
     // dog.mover(5);
+
+
+    import {soma, subtrai} from './matematica.js';
+
+    console.log (soma(5,3))
+    console.log (subtrai(5,3))
